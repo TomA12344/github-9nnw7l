@@ -10,19 +10,22 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 
 const featuredArticles = [
   {
-    slug: 'the-art-of-creating-sticky-headers',
-    title: 'The Art of Creating Sticky Headers',
-    description: 'Learn how to implement effective sticky headers in modern web development.',
+    slug: 'modern-web-development-trends-2024',
+    title: 'Modern Web Development Trends in 2024',
+    description: 'Explore the latest trends and technologies shaping web development in 2024, from AI integration to advanced frontend frameworks.',
+    image: '/blog/web-dev-2024.jpg',
   },
   {
-    slug: 'responsive-design-best-practices',
-    title: 'Responsive Design Best Practices',
-    description: 'Explore key principles and techniques for creating responsive web designs.',
+    slug: 'mastering-react-performance-optimization',
+    title: 'Mastering React Performance Optimization',
+    description: 'Learn advanced techniques for optimizing React applications, from code splitting to efficient state management.',
+    image: '/blog/react-performance.jpg',
   },
   {
-    slug: 'optimizing-web-performance',
-    title: 'Optimizing Web Performance',
-    description: 'Discover strategies to improve your website\'s loading speed and overall performance.',
+    slug: 'building-accessible-web-applications',
+    title: 'Building Accessible Web Applications',
+    description: 'A comprehensive guide to creating web applications that are accessible to all users, including those with disabilities.',
+    image: '/blog/web-accessibility.jpg',
   },
 ]
 
@@ -102,7 +105,7 @@ export function BlogLandingPageComponent() {
               <Card key={i}>
                 <CardHeader>
                   <Image
-                    src={`/placeholder.svg?height=200&width=400`}
+                    src={article.image}
                     alt={`Featured article ${i + 1}`}
                     width={400}
                     height={200}
